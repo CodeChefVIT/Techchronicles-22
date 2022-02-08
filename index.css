@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Sora", sans-serif;
+    color: white;
+}
+body {
+    background: linear-gradient(180deg, #000229 0%, #2c33d9 100%);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.nav-div {
+    padding: 1em 1em;
+}
+
+.nav-div,
+.nav-div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-div ul {
+    gap: 1.5em;
+}
+
+.nav-div ul li a {
+    opacity: 0.8;
+}
+
+.hero-div-main,
+.hero-div-title-sub,
+.hero-div-span-btn,
+.about-div-main,
+.about-div-title-text,
+.about-div-title-img,
+.about-tech-chronicles-div-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-div-main {
+    padding: 9rem 0;
+    gap: 6rem;
+}
+.hero-div-span-btn {
+    gap: 1rem;
+}
+
+.hero-div-main h1 {
+    font-size: 7.5em;
+}
+.hero-div-main p {
+    font-size: 2em;
+}
+
+.hero-div-span-btn span {
+    font-size: 3em;
+}
+
+.hero-div-span-btn button {
+    background: url("/medium.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 16px;
+    padding: 2rem 5rem;
+    outline: 0;
+    border: 2px solid black;
+    box-shadow: 8px 8px rgba(64, 106, 255, 1);
+}
+
+/* About Section  */
+.about-div-title-text {
+    padding: 0 12em;
+    gap: 2rem;
+}
+.about-div-title-text p {
+    text-align: center;
+}
+.about-div-main {
+    gap: 6rem;
+}
+.about-div-title-img {
+    gap: 3rem;
+}
+
+.about-div-title-img-containers {
+    display: flex;
+    gap: 10rem;
+}
+
+.about-div-title-img-containers div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 14rem;
+    height: 15rem;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 8px 8px rgba(64, 106, 255, 1);
+}
+
+.about-div-title-img-containers div span {
+    color: black;
+    font-weight: 500;
+}
+
+/* About texh chronicles  */
+
+.about-tech-chronicles-div-main {
+    gap: 6rem;
+    padding: 0 4em;
+}
+
+.about-tech-chronicles-div-content-img,
+.rules-regulations-div-content-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-tech-chronicles-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.about-tech-chronicles-content-container p,
+.rules-regulations-div-content-img p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.about-tech-chronicles-content-container-sub-text span {
+    font-size: 1.5em;
+}
+
+.rules-regulations-div-content-img img {
+    width: 50%;
+}
