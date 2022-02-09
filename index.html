@@ -7,12 +7,18 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/cursor.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
         />
     </head>
     <body>
+        <div class="cursor-container">
+            <div class="cursor"></div>
+            <div class="inner-circle"></div>
+        </div>
+
         <div class="main">
             <section id="Hero">
                 <nav>
@@ -30,7 +36,8 @@
                 </nav>
                 <div class="hero-div-main">
                     <div class="hero-div-title-sub">
-                        <h1>Tech Chronicles</h1>
+                        <!-- <h1>Tech Chronicles</h1> -->
+                        <img src="/Images/Title.png" alt="" />
                         <p>
                             Prove that you can write better than most people
                             code.
@@ -39,7 +46,7 @@
 
                     <div class="hero-div-span-btn">
                         <span>Submissions are open!</span>
-                        <button></button>
+                        <button class="hover-change medium-btn"></button>
                     </div>
                 </div>
             </section>
@@ -62,26 +69,32 @@
                     <div class="about-div-title-img">
                         <h1>Events</h1>
                         <div class="about-div-title-img-containers">
-                            <div>
+                            <div class="hover-change">
+                                <span>Tech Chronicles</span>
+
                                 <img
-                                    src="/Images/tech-chronicles.svg"
+                                    src="/Images/tech-chronicles.png"
                                     alt="TechChronicles"
                                 />
-                                <span>Tech Chronicles</span>
+
+                                <span>For bloggers</span>
                             </div>
-                            <div>
+                            <div class="hover-change">
+                                <span>Consilio</span>
                                 <img
-                                    src="/Images/tech-chronicles.svg"
+                                    src="/Images/consilio.png"
                                     alt="Consilio"
                                 />
-                                <span>Consilio</span>
+                                <span>For designers</span>
                             </div>
-                            <div>
+                            <div class="hover-change">
+                                <span>Code Invicta</span>
+
                                 <img
-                                    src="/Images/tech-chronicles.svg"
+                                    src="/Images/code-invicta.png"
                                     alt="Code Invicta"
                                 />
-                                <span>Code Invicta</span>
+                                <span>For programmers</span>
                             </div>
                         </div>
                     </div>
@@ -110,22 +123,38 @@
                                 <div
                                     class="about-tech-chronicles-content-container-sub-text-buttons"
                                 >
-                                    <button>Web Dev</button>
-                                    <button>Cloud Computing</button>
-                                    <button>ML & AI</button>
-                                    <button>Blockchain</button>
-                                    <button>App Dev</button>
-                                    <button>Design</button>
-                                    <button>DSA</button>
-                                    <button>Programming</button>
+                                    <button class="hover-change">
+                                        Web Dev
+                                    </button>
+                                    <button class="hover-change">
+                                        Cloud Computing
+                                    </button>
+                                    <button class="hover-change">
+                                        ML & AI
+                                    </button>
+                                    <button class="hover-change">
+                                        Blockchain
+                                    </button>
+                                    <button class="hover-change">
+                                        App Dev
+                                    </button>
+                                    <button class="hover-change">Design</button>
+                                    <button class="hover-change">DSA</button>
+                                    <button class="hover-change">
+                                        Programming
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <img src="/Images/rocket.png" alt="Rocket" />
+                        <img
+                            src="/Images/rocket.png"
+                            class="hover-change"
+                            alt="Rocket"
+                        />
                     </div>
                 </div>
             </section>
-            <section id="AboutTechChronicles">
+            <section id="Rules">
                 <div class="rules-regulations-div-main">
                     <h1>Rules and Regulations</h1>
                     <div class="rules-regulations-div-content-img">
@@ -145,12 +174,152 @@
                             </p>
                         </div>
 
-                        <img src="./Images/satellite.svg" alt="Rocket" />
+                        <img
+                            src="./Images/satellite.png"
+                            class="hover-change"
+                            alt="Rocket"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section id="Prizes">
+                <div class="about-tech-chronicles-div-main">
+                    <h1>Prizes</h1>
+                    <div class="prizes-div-content-img">
+                        <div class="about-tech-chronicles-content-container">
+                            <p>Coming soon! Stay tuned to find out.</p>
+                        </div>
+                        <img
+                            src="/Images/prizes.png"
+                            class="hover-change"
+                            alt="Rocket"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section id="Submit">
+                <div class="submit-div-main">
+                    <div class="submit-div-main-content">
+                        <h1>Do not forget to submit your drafts ;)</h1>
+                        <button class="hover-change medium-btn"></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer">
+                <div class="footerDiv">
+                    <div class="footerContentDiv">
+                        <div class="footerContentTextDiv">
+                            <h1>TechChronicles - Road to DEVSOC/22</h1>
+                            <p class="footerContentText">
+                                Join CodeChef - VIT’s journey on the Road to
+                                DEVSOC 22 with our first event - TechChronicles
+                                - a chance to prove that you can write better
+                                than most people code.
+                            </p>
+                        </div>
+
+                        <div class="footerLinksContainerDiv">
+                            <div class="footerLinksDiv">
+                                <h1>Important Links</h1>
+                                <ul>
+                                    <li>
+                                        <a href="/">About Road to Devsoc</a>
+                                    </li>
+                                    <li>
+                                        <a href="#About"
+                                            >About TechChronicles</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#Rules"
+                                            >Rules and Regulations</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#Prizes">Prizes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Submit">Submit</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footerBottom">
+                        <div class="footerBottomCopyrightDiv">
+                            <!-- <img src="/Images/copyright.svg" alt="copyright svg"> -->
+
+                            <span
+                                >&copy; Copyright 2021 | CodeChef-VIT | All
+                                rights reserved.</span
+                            >
+                        </div>
+                        <div class="footerSocials">
+                            <a
+                                href=" https://www.facebook.com/codechefvit/ "
+                                target="_black"
+                                ><img
+                                    class="footerSocialImage"
+                                    src="/Images/Facebook - Negative.svg "
+                                    alt=" "
+                            /></a>
+                            <a
+                                href="https://twitter.com/codechefvit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                                target="_black"
+                                ><img
+                                    class="footerSocialImage"
+                                    src="/Images/Twitter - Negative.svg "
+                                    alt=" "
+                            /></a>
+                            <a
+                                href="https://www.linkedin.com/company/codechef-vit-chapter/mycompany/"
+                                target="_black"
+                                ><img
+                                    class="footerSocialImage"
+                                    src="/Images/LinkedIn - Negative.svg "
+                                    alt=" "
+                            /></a>
+                            <a
+                                href="https://www.youtube.com/c/CodeChefVIT"
+                                target="_black"
+                                ><img
+                                    class="footerSocialImage"
+                                    src="/Images/YouTube - Negative.svg "
+                                    alt=" "
+                            /></a>
+                            <a
+                                href="https://www.instagram.com/codechefvit/"
+                                target="_black"
+                                ><img
+                                    class="footerSocialImage"
+                                    src="/Images/Instagram - Negative.svg "
+                                    alt=" "
+                            /></a>
+                            <a
+                                href="https://medium.com/codechef-vit"
+                                target="_black"
+                                ><img
+                                    class="footerSocialImage"
+                                    src="/Images/Medium - Negative.svg "
+                                    alt=" "
+                            /></a>
+                            <a
+                                href="https://github.com/CodeChefVIT"
+                                target="_black"
+                                ><img
+                                    class="footerSocialImage"
+                                    src="/Images/github.png "
+                                    alt=" "
+                            /></a>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
 
-        <script src="" async defer></script>
+        <script src="/app.js"></script>
     </body>
 </html>

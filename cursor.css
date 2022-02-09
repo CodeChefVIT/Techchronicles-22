@@ -1,0 +1,62 @@
+body {
+    cursor: none;
+}
+
+.cursor {
+    width: 28px;
+    height: 28px;
+    border: 2px solid white;
+    z-index: 50;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+}
+
+.inner-circle {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    z-index: 50;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 100ms;
+    pointer-events: none;
+    transition-timing-function: ease-out;
+}
+.cursor-sidebar-change {
+    z-index: 40;
+}
+.cursor-change {
+    width: 28px;
+    height: 28px;
+    border: 2px solid #1579d6;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 600;
+    pointer-events: none;
+}
+
+.cursor-change::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: #1579d6;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 600;
+    pointer-events: none;
+    animation: cursorAnim 0.5s infinite alternate;
+}
+
+.inner-circle-change {
+    display: none;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.5);
+    }
+}
