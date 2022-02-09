@@ -4,7 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: "Sora", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     color: white;
 }
 body {
@@ -16,11 +16,11 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 8rem;
 }
 
 .nav-div {
-    padding: 1em 1em;
+    padding: 1rem 1rem;
 }
 
 .nav-div,
@@ -45,7 +45,9 @@ body {
 .about-div-main,
 .about-div-title-text,
 .about-div-title-img,
-.about-tech-chronicles-div-main {
+.about-tech-chronicles-div-main,
+.rules-regulations-div-main,
+.rules-regulations-content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,11 +87,15 @@ body {
 
 /* About Section  */
 .about-div-title-text {
-    padding: 0 12em;
+    padding: 0 12rem;
     gap: 2rem;
+}
+.about-div-title-text h1 {
+    font-size: 3em;
 }
 .about-div-title-text p {
     text-align: center;
+    font-size: 1.5em;
 }
 .about-div-main {
     gap: 6rem;
@@ -97,7 +103,9 @@ body {
 .about-div-title-img {
     gap: 3rem;
 }
-
+.about-div-title-img h1 {
+    font-size: 2.5em;
+}
 .about-div-title-img-containers {
     display: flex;
     gap: 10rem;
@@ -125,33 +133,73 @@ body {
 /* About texh chronicles  */
 
 .about-tech-chronicles-div-main {
-    gap: 6rem;
-    padding: 0 4em;
+    gap: 4rem;
+    align-items: center;
+}
+.about-tech-chronicles-div-main h1 {
+    font-size: 3em;
 }
 
 .about-tech-chronicles-div-content-img,
 .rules-regulations-div-content-img {
     display: flex;
-    flex-direction: row;
     align-items: center;
+}
+.about-tech-chronicles-div-content-img {
+    padding: 0 0 0 8rem;
 }
 
 .about-tech-chronicles-content-container {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 4rem;
 }
 
 .about-tech-chronicles-content-container p,
-.rules-regulations-div-content-img p {
+.rules-regulations-div-content-img p,
+.about-tech-chronicles-content-container-sub-text span {
     font-size: 1.5em;
     line-height: 1.5em;
 }
 
-.about-tech-chronicles-content-container-sub-text span {
-    font-size: 1.5em;
+.about-tech-chronicles-content-container-sub-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
+.about-tech-chronicles-content-container-sub-text button {
+    color: black;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 16px;
+    font-weight: 500;
+    border: 2px solid black;
+    box-shadow: 4px 4px rgba(64, 106, 255, 1);
 
+    outline: 0;
+}
+.about-tech-chronicles-content-container-sub-text-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+.rules-regulations-div-main {
+    gap: 4rem;
+    align-items: center;
+}
+.rules-regulations-div-content-img {
+    flex-direction: row-reverse;
+    padding: 0 4rem 0 0;
+}
 .rules-regulations-div-content-img img {
-    width: 50%;
+    width: 60%;
+}
+.rules-regulations-div-main h1 {
+    font-size: 3em;
+}
+.rules-regulations-content-container {
+    gap: 1rem;
+}
+.rules-regulations-content-container p {
+    width: 85%;
 }
