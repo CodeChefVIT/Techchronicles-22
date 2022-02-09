@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1160px) {
+    .about-tech-chronicles-div-content-img {
+        padding: 0 0 0 4rem;
+    }
+    .about-tech-chronicles-div-content-img img {
+        width: 50%;
+    }
+    .rules-regulations-div-content-img {
+        padding: 0 2rem 0 0;
+    }
+    .nav-div img {
+        width: 10%;
+    }
+    .nav-div ul li a {
+        font-size: 0.75em;
+    }
+    section.footer h1 {
+        font-size: 1.5em;
+    }
+    .footerContentText {
+        font-size: 1em;
+    }
+    .footerLinksDiv a {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .about-div-title-img-containers {
+        gap: 6rem;
+    }
+}
+
+/* Mobile version  */
+
+@media only screen and (max-width: 950px) {
+    .nav-div-ul {
+        display: none;
+    }
+
+    .footerDiv {
+        padding: 4rem 3rem 1rem 3rem;
+        gap: 3rem;
+    }
+
+    .sidebar {
+        z-index: 20;
+    }
+    .vertical-menu-icon-container {
+        display: flex;
+    }
+}

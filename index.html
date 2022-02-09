@@ -8,6 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="/style.css" />
         <link rel="stylesheet" href="/cursor.css" />
+        <link rel="stylesheet" href="/menu.css" />
+        <link rel="stylesheet" href="/layout.css" />
+
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
@@ -23,15 +26,119 @@
             <section id="Hero">
                 <nav>
                     <div class="nav-div">
-                        <img src="Images/Logo.svg" alt="Logo-TechChronicles" />
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/">About Road to DEVSOC</a></li>
-                            <li><a href="/">About TechChronicles</a></li>
-                            <li><a href="/">Rules</a></li>
-                            <li><a href="/">Prizes</a></li>
-                            <li><a href="/">Submit</a></li>
+                        <img
+                            class="sidebarImg"
+                            src="Images/Logo.svg"
+                            alt="Logo-TechChronicles"
+                        />
+                        <ul class="nav-div-ul">
+                            <li class="hover-change"><a href="/">Home</a></li>
+                            <li class="hover-change">
+                                <a href="#AboutRoadToDevsoc"
+                                    >About Road to DEVSOC</a
+                                >
+                            </li>
+                            <li class="hover-change">
+                                <a href="#AboutTechChronicles"
+                                    >About TechChronicles</a
+                                >
+                            </li>
+                            <li class="hover-change">
+                                <a href="#Rules">Rules</a>
+                            </li>
+                            <li class="hover-change">
+                                <a href="#Prizes">Prizes</a>
+                            </li>
+                            <li class="hover-change">
+                                <a href="/">Submit</a>
+                            </li>
                         </ul>
+                        <div class="vertical-menu-icon-container hover-change">
+                            <div class="vertical-menu-icon bar-1"></div>
+                            <div class="vertical-menu-icon bar-2"></div>
+                            <div class="vertical-menu-icon bar-3"></div>
+                        </div>
+
+                        <div class="sidebar">
+                            <div class="sidebar-sections-container">
+                                <ul>
+                                    <li
+                                        class="sidebar-sections-li hover-change"
+                                    >
+                                        <a
+                                            class="sidebar-sections-span"
+                                            href="#AboutRoadToDevsoc"
+                                            >About Road To Devsoc</a
+                                        >
+                                    </li>
+                                    <li
+                                        class="sidebar-sections-li hover-change"
+                                    >
+                                        <a
+                                            class="sidebar-sections-span"
+                                            href="#AboutTechChronicles"
+                                            >About TechChronicles</a
+                                        >
+                                    </li>
+
+                                    <li
+                                        class="sidebar-sections-li hover-change"
+                                    >
+                                        <a
+                                            class="sidebar-sections-span"
+                                            href="#Rules"
+                                            >Rules and Regulatios</a
+                                        >
+                                    </li>
+                                    <li
+                                        class="sidebar-sections-li hover-change"
+                                    >
+                                        <a
+                                            class="sidebar-sections-span"
+                                            href="#Prizes"
+                                            >Prizes</a
+                                        >
+                                    </li>
+
+                                    <li
+                                        class="sidebar-sections-li hover-change"
+                                    >
+                                        <a
+                                            class="sidebar-sections-span"
+                                            href="/"
+                                            >Submit</a
+                                        >
+                                    </li>
+                                    <!-- <li
+                                        class="sidebar-sections-li hover-change"
+                                    >
+                                        <a
+                                            class="sidebar-sections-span"
+                                            href="#Sponsors"
+                                            >Sponsors</a
+                                        >
+                                    </li>
+                                    <li
+                                        class="sidebar-sections-li hover-change"
+                                    >
+                                        <a
+                                            class="sidebar-sections-span"
+                                            href="#FAQs"
+                                            >FAQs</a
+                                        >
+                                    </li>
+                                    <li
+                                        class="sidebar-sections-li hover-change"
+                                    >
+                                        <a
+                                            class="sidebar-sections-span"
+                                            href="#Contact"
+                                            >Contact</a
+                                        >
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </nav>
                 <div class="hero-div-main">
@@ -51,7 +158,7 @@
                 </div>
             </section>
 
-            <section id="About">
+            <section id="AboutRoadToDevsoc">
                 <div class="about-div-main">
                     <div class="about-div-title-text">
                         <h1>About Road to Devsoc</h1>
@@ -123,37 +230,22 @@
                                 <div
                                     class="about-tech-chronicles-content-container-sub-text-buttons"
                                 >
-                                    <button class="hover-change">
-                                        Web Dev
-                                    </button>
-                                    <button class="hover-change">
-                                        Cloud Computing
-                                    </button>
-                                    <button class="hover-change">
-                                        ML & AI
-                                    </button>
-                                    <button class="hover-change">
-                                        Blockchain
-                                    </button>
-                                    <button class="hover-change">
-                                        App Dev
-                                    </button>
-                                    <button class="hover-change">Design</button>
-                                    <button class="hover-change">DSA</button>
-                                    <button class="hover-change">
-                                        Programming
-                                    </button>
+                                    <button>Web Dev</button>
+                                    <button>Cloud Computing</button>
+                                    <button>ML & AI</button>
+                                    <button>Blockchain</button>
+                                    <button>App Dev</button>
+                                    <button>Design</button>
+                                    <button>DSA</button>
+                                    <button>Programming</button>
                                 </div>
                             </div>
                         </div>
-                        <img
-                            src="/Images/rocket.png"
-                            class="hover-change"
-                            alt="Rocket"
-                        />
+                        <img src="/Images/rocket.png" alt="Rocket" />
                     </div>
                 </div>
             </section>
+
             <section id="Rules">
                 <div class="rules-regulations-div-main">
                     <h1>Rules and Regulations</h1>
@@ -174,11 +266,7 @@
                             </p>
                         </div>
 
-                        <img
-                            src="./Images/satellite.png"
-                            class="hover-change"
-                            alt="Rocket"
-                        />
+                        <img src="./Images/satellite.png" alt="Rocket" />
                     </div>
                 </div>
             </section>
@@ -189,11 +277,7 @@
                         <div class="about-tech-chronicles-content-container">
                             <p>Coming soon! Stay tuned to find out.</p>
                         </div>
-                        <img
-                            src="/Images/prizes.png"
-                            class="hover-change"
-                            alt="Rocket"
-                        />
+                        <img src="/Images/prizes.png" alt="Rocket" />
                     </div>
                 </div>
             </section>
@@ -225,10 +309,12 @@
                                 <h1>Important Links</h1>
                                 <ul>
                                     <li>
-                                        <a href="/">About Road to Devsoc</a>
+                                        <a href="#AboutRoadToDevsoc"
+                                            >About Road to Devsoc</a
+                                        >
                                     </li>
                                     <li>
-                                        <a href="#About"
+                                        <a href="#AboutTechChronicles"
                                             >About TechChronicles</a
                                         >
                                     </li>
@@ -241,85 +327,92 @@
                                         <a href="#Prizes">Prizes</a>
                                     </li>
                                     <li>
-                                        <a href="#Submit">Submit</a>
+                                        <a href="/">Submit</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <div class="footerBottom">
-                        <div class="footerBottomCopyrightDiv">
-                            <!-- <img src="/Images/copyright.svg" alt="copyright svg"> -->
-
-                            <span
-                                >&copy; Copyright 2021 | CodeChef-VIT | All
-                                rights reserved.</span
-                            >
+                    <div class="footer-bottom-main">
+                        <div class="footerBottom">
+                            <div class="footerBottomCopyrightDiv">
+                                <span> Developed with </span>
+                                <img src="/Images/heart.png" alt="" />
+                                <span>by CodeChef-VIT</span>
+                            </div>
+                            <div class="footerSocials hover-change">
+                                <a
+                                    href=" https://www.facebook.com/codechefvit/ "
+                                    target="_black"
+                                    ><img
+                                        class="footerSocialImage"
+                                        src="/Images/Facebook - Negative.svg "
+                                        alt=" "
+                                /></a>
+                                <a
+                                    href="https://twitter.com/codechefvit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                                    target="_black"
+                                    ><img
+                                        class="footerSocialImage"
+                                        src="/Images/Twitter - Negative.svg "
+                                        alt=" "
+                                /></a>
+                                <a
+                                    href="https://www.linkedin.com/company/codechef-vit-chapter/mycompany/"
+                                    target="_black"
+                                    ><img
+                                        class="footerSocialImage"
+                                        src="/Images/LinkedIn - Negative.svg "
+                                        alt=" "
+                                /></a>
+                                <a
+                                    href="https://www.youtube.com/c/CodeChefVIT"
+                                    target="_black"
+                                    ><img
+                                        class="footerSocialImage"
+                                        src="/Images/YouTube - Negative.svg "
+                                        alt=" "
+                                /></a>
+                                <a
+                                    href="https://www.instagram.com/codechefvit/"
+                                    target="_black"
+                                    ><img
+                                        class="footerSocialImage"
+                                        src="/Images/Instagram - Negative.svg "
+                                        alt=" "
+                                /></a>
+                                <a
+                                    href="https://medium.com/codechef-vit"
+                                    target="_black"
+                                    ><img
+                                        class="footerSocialImage"
+                                        src="/Images/Medium - Negative.svg "
+                                        alt=" "
+                                /></a>
+                                <a
+                                    href="https://github.com/CodeChefVIT"
+                                    target="_black"
+                                    ><img
+                                        class="footerSocialImage"
+                                        src="/Images/github.png "
+                                        alt=" "
+                                /></a>
+                            </div>
                         </div>
-                        <div class="footerSocials">
-                            <a
-                                href=" https://www.facebook.com/codechefvit/ "
-                                target="_black"
-                                ><img
-                                    class="footerSocialImage"
-                                    src="/Images/Facebook - Negative.svg "
-                                    alt=" "
-                            /></a>
-                            <a
-                                href="https://twitter.com/codechefvit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                                target="_black"
-                                ><img
-                                    class="footerSocialImage"
-                                    src="/Images/Twitter - Negative.svg "
-                                    alt=" "
-                            /></a>
-                            <a
-                                href="https://www.linkedin.com/company/codechef-vit-chapter/mycompany/"
-                                target="_black"
-                                ><img
-                                    class="footerSocialImage"
-                                    src="/Images/LinkedIn - Negative.svg "
-                                    alt=" "
-                            /></a>
-                            <a
-                                href="https://www.youtube.com/c/CodeChefVIT"
-                                target="_black"
-                                ><img
-                                    class="footerSocialImage"
-                                    src="/Images/YouTube - Negative.svg "
-                                    alt=" "
-                            /></a>
-                            <a
-                                href="https://www.instagram.com/codechefvit/"
-                                target="_black"
-                                ><img
-                                    class="footerSocialImage"
-                                    src="/Images/Instagram - Negative.svg "
-                                    alt=" "
-                            /></a>
-                            <a
-                                href="https://medium.com/codechef-vit"
-                                target="_black"
-                                ><img
-                                    class="footerSocialImage"
-                                    src="/Images/Medium - Negative.svg "
-                                    alt=" "
-                            /></a>
-                            <a
-                                href="https://github.com/CodeChefVIT"
-                                target="_black"
-                                ><img
-                                    class="footerSocialImage"
-                                    src="/Images/github.png "
-                                    alt=" "
-                            /></a>
-                        </div>
+                        <a
+                            class="hover-change"
+                            href="https://codechefvit.com/"
+                            target="_blank"
+                        >
+                            <img src="./Images/codechef_logo_1.png" alt="" />
+                        </a>
                     </div>
                 </div>
             </section>
         </div>
 
         <script src="/app.js"></script>
+        <script src="/sidebar.js"></script>
     </body>
 </html>
