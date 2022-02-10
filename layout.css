@@ -40,6 +40,10 @@
         height: 100%;
         /* overflow-x: hidden; */
     }
+
+    .cursor-container {
+        display: none;
+    }
     .nav-div-ul {
         display: none;
     }
