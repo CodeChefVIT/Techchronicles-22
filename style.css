@@ -69,10 +69,12 @@ body {
 }
 .hero-div-main p {
     font-size: 2em;
+    text-align: center;
 }
 
 .hero-div-span-btn span {
     font-size: 3em;
+    text-align: center;
 }
 
 .medium-btn {
@@ -95,6 +97,7 @@ body {
 }
 .about-div-title-text h1 {
     font-size: 3em;
+    text-align: center;
 }
 .about-div-title-text p {
     text-align: center;
@@ -149,6 +152,7 @@ body {
 }
 .about-tech-chronicles-div-main h1 {
     font-size: 3em;
+    text-align: center;
 }
 
 .about-tech-chronicles-div-content-img,
@@ -206,6 +210,7 @@ body {
 }
 .rules-regulations-div-main h1 {
     font-size: 3em;
+    text-align: center;
 }
 .rules-regulations-content-container {
     gap: 1rem;
@@ -265,7 +270,6 @@ section.footer h1 {
 .footerContentDiv {
     display: flex;
     align-items: centers;
-
     justify-content: space-between;
 }
 

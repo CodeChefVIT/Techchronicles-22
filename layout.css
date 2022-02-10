@@ -38,6 +38,49 @@
         display: none;
     }
 
+    .hero-div-title-sub img {
+        width: 80%;
+    }
+    .hero-div-main p {
+        font-size: 1.5em;
+    }
+
+    .hero-div-span-btn span {
+        font-size: 2em;
+    }
+    .about-div-title-img-containers {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .about-tech-chronicles-div-content-img,
+    .rules-regulations-div-content-img {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .about-tech-chronicles-div-content-img {
+        padding: 0 0 0 0rem;
+    }
+    .about-tech-chronicles-content-container {
+        width: 85%;
+    }
+    .about-tech-chronicles-content-container p,
+    .rules-regulations-div-content-img p,
+    .about-tech-chronicles-content-container-sub-text span {
+        text-align: center;
+    }
+    .about-tech-chronicles-content-container-sub-text-buttons {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rules-regulations-div-content-img {
+        padding: 0 0rem 0 0;
+    }
+    .prizes-div-content-img {
+        padding: 0 0 0 0rem;
+        flex-direction: column;
+    }
+
     .footerDiv {
         padding: 4rem 3rem 1rem 3rem;
         gap: 3rem;
@@ -48,5 +91,92 @@
     }
     .vertical-menu-icon-container {
         display: flex;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .about-div-title-text {
+        padding: 0 3rem;
+    }
+    .footerBottomCopyrightDiv > span {
+        font-size: 0.75em;
+    }
+    .footerBottomCopyrightDiv img {
+        width: 0.5rem;
+    }
+    .footerSocials {
+        gap: 1rem;
+    }
+    .footerSocials a img {
+        width: 10px;
+    }
+
+    .codechef-logo {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .hero-div-main p {
+        font-size: 1.25em;
+        text-align: center;
+    }
+
+    .hero-div-span-btn span {
+        font-size: 2em;
+        text-align: center;
+    }
+    .moon-image {
+        width: 60%;
+    }
+
+    .footerDiv {
+        padding: 2rem 0rem 1rem 2rem;
+    }
+    .footerContentDiv {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .footerContentTextDiv {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footerDiv {
+        padding: 2rem 0rem 1rem 0rem;
+    }
+
+    .footerContentDiv {
+        align-items: center;
+    }
+    .footerContentText {
+        text-align: center;
+    }
+    .footerLinksDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerLinksDiv ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-bottom-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .footer-bottom-main > a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerBottom {
+        align-items: center;
+    }
+    .codechef-logo {
+        display: inline;
     }
 }
