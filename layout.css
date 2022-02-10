@@ -9,7 +9,7 @@
         padding: 0 2rem 0 0;
     }
     .nav-div img {
-        width: 10%;
+        width: 20%;
     }
     .nav-div ul li a {
         font-size: 0.75em;
@@ -34,12 +34,18 @@
 /* Mobile version  */
 
 @media only screen and (max-width: 950px) {
+    body {
+        background: url("/Images/body-image\(mobile\).png") no-repeat;
+        background-position: center top;
+        height: 100%;
+        /* overflow-x: hidden; */
+    }
     .nav-div-ul {
         display: none;
     }
 
     .hero-div-title-sub img {
-        width: 80%;
+        width: 90%;
     }
     .hero-div-main p {
         font-size: 1.5em;
@@ -47,6 +53,9 @@
 
     .hero-div-span-btn span {
         font-size: 2em;
+    }
+    .about-div-title-text {
+        padding: 0 3rem;
     }
     .about-div-title-img-containers {
         flex-direction: column;
@@ -95,9 +104,6 @@
 }
 
 @media only screen and (max-width: 700px) {
-    .about-div-title-text {
-        padding: 0 3rem;
-    }
     .footerBottomCopyrightDiv > span {
         font-size: 0.75em;
     }
@@ -118,13 +124,21 @@
 
 @media only screen and (max-width: 610px) {
     .hero-div-main p {
-        font-size: 1.25em;
+        font-size: 1em;
         text-align: center;
+    }
+    .sidebar-sections-span {
+        font-size: 1.5em !important;
     }
 
     .hero-div-span-btn span {
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: center;
+    }
+
+    .medium-btn {
+        padding: 1.5rem 4.5rem;
+        box-shadow: 4px 4px rgba(64, 106, 255, 1);
     }
     .moon-image {
         width: 60%;
@@ -142,7 +156,29 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
+    .nav-div {
+        padding: 1.5rem 0.5rem 0rem 0.5rem;
+    }
+    .about-div-title-text h1,
+    .about-tech-chronicles-div-main h1,
+    .rules-regulations-div-main h1 {
+        font-size: 1.8em;
+    }
+    .about-div-title-text p {
+        font-size: 1em;
+    }
+    .about-tech-chronicles-content-container p,
+    .rules-regulations-div-content-img p,
+    .about-tech-chronicles-content-container-sub-text
+        span
+        .submit-div-main-content {
+        font-size: 1em;
+    }
+    .submit-div-main-content h1 {
+        font-size: 1rem;
+    }
+
     .footerDiv {
         padding: 2rem 0rem 1rem 0rem;
     }
@@ -178,5 +214,11 @@
     }
     .codechef-logo {
         display: inline;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .sidebar-sections-span {
+        font-size: 1em !important;
     }
 }
