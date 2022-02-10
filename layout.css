@@ -1,3 +1,11 @@
+@media only screen and (min-width: 1440px) {
+    body {
+        background: url("/Images/body-image\(desktop\).png") no-repeat;
+        background-position: center top;
+        height: 100%;
+        /* overflow-x: hidden; */
+    }
+}
 @media only screen and (max-width: 1160px) {
     .about-tech-chronicles-div-content-img {
         padding: 0 0 0 4rem;
@@ -118,7 +126,7 @@
         gap: 1rem;
     }
     .footerSocials a img {
-        width: 10px;
+        width: 15px;
     }
 
     .codechef-logo {
@@ -127,6 +135,9 @@
 }
 
 @media only screen and (max-width: 610px) {
+    .nav-div img {
+        width: 30%;
+    }
     .hero-div-main p {
         font-size: 1em;
         text-align: center;
@@ -164,6 +175,9 @@
     .nav-div {
         padding: 1.5rem 0.5rem 0rem 0.5rem;
     }
+    .sidebar-sections-span {
+        font-size: 1em !important;
+    }
     .about-div-title-text h1,
     .about-tech-chronicles-div-main h1,
     .rules-regulations-div-main h1 {
@@ -174,17 +188,19 @@
     }
     .about-tech-chronicles-content-container p,
     .rules-regulations-div-content-img p,
-    .about-tech-chronicles-content-container-sub-text
-        span
-        .submit-div-main-content {
+    .about-tech-chronicles-content-container-sub-text span {
         font-size: 1em;
     }
+
     .submit-div-main-content h1 {
         font-size: 1rem;
     }
 
     .footerDiv {
         padding: 2rem 0rem 1rem 0rem;
+    }
+    section.footer h1 {
+        text-align: center;
     }
 
     .footerContentDiv {
@@ -221,8 +237,23 @@
     }
 }
 
-@media only screen and (max-width: 550px) {
-    .sidebar-sections-span {
-        font-size: 1em !important;
+@media only screen and (max-width: 400px) {
+    .submit-div-main-content {
+        padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    }
+    .submit-div-main-content h1 {
+        font-size: 1em;
+    }
+    .nav-div img {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .submit-div-main-content {
+        padding: 1.5rem 1rem 1.5rem 1rem;
+    }
+    .submit-div-main-content h1 {
+        font-size: 0.8em;
     }
 }

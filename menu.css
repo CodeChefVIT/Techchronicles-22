@@ -16,6 +16,7 @@
     flex-direction: column;
     gap: 0.25rem;
     display: none;
+    z-index: 20;
 }
 
 .vertical-menu-icon {
