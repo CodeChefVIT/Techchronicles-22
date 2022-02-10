@@ -100,6 +100,7 @@
     .prizes-div-content-img {
         padding: 0 0 0 0rem;
         flex-direction: column;
+        gap: 3rem;
     }
 
     .footerDiv {
@@ -116,6 +117,13 @@
 }
 
 @media only screen and (max-width: 700px) {
+    body {
+        background: url("/Images/body-image\(hand\).png") no-repeat;
+        background-position: center top;
+        height: 100%;
+        /* overflow-x: hidden; */
+    }
+
     .footerBottomCopyrightDiv > span {
         font-size: 0.75em;
     }
