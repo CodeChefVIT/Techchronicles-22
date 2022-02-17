@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1441px) {
     body {
-        background: url("/Images/body-image\(desktop\).png") no-repeat;
+        background: url("/FrontEnd/Images/body-image\(desktop\).png") no-repeat;
         background-position: center top;
         height: 100%;
         /* overflow-x: hidden; */
@@ -55,7 +55,7 @@
 
 @media only screen and (max-width: 950px) {
     body {
-        background: url("/Images/body-image\(mobile\).png") no-repeat;
+        background: url("/FrontEnd/Images/body-image\(mobile\).png") no-repeat;
         background-position: center top;
         height: 100%;
         /* overflow-x: hidden; */
@@ -130,7 +130,7 @@
 
 @media only screen and (max-width: 700px) {
     body {
-        background: url("/Images/body-image\(hand\).png") no-repeat;
+        background: url("/FrontEnd/Images/body-image\(hand\).png") no-repeat;
         background-position: center top;
         height: 100%;
         /* overflow-x: hidden; */
