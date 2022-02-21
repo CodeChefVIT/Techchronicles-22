@@ -1,20 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
-    color: white;
-}
-body {
-    background: url("/FrontEnd/Images/image-submit-form.png") no-repeat;
-    background-position: center top;
-    min-width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-}
-
 .submission-main-container {
     display: flex;
 
@@ -46,7 +29,8 @@ body {
     padding: 3rem;
     width: 60vw;
 
-    background-color: rgba(64, 106, 255, 1);
+    background: linear-gradient(180deg, #2b31d2 0%, #191e8c 100%);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
 }
 
@@ -74,8 +58,16 @@ body {
     border-radius: 16px;
     padding: 1rem 3rem;
     outline: 0;
-    border: 2px solid black;
-    box-shadow: 8px 8px rgb(0, 0, 0);
+    border: 1px solid black;
+    box-shadow: 8px 8px rgba(64, 106, 255, 1);
+    transition: all 400ms ease;
+}
+
+.submit-btn:hover {
+    background-color: rgba(64, 106, 255, 1);
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 8px 8px rgb(255, 255, 255);
 }
 
 /* Media queries  */

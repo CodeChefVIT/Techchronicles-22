@@ -14,7 +14,8 @@ html {
 
 body {
     background: url("/FrontEnd/Images/body-image.png") no-repeat;
-    background-position: center top;
+    background-position: top center;
+    background-attachment: scroll;
     height: 100%;
     min-width: 100%;
     overflow-x: hidden;
@@ -312,7 +313,7 @@ section.footer h1 {
     padding: 1rem 0;
     font-size: 1.5em;
     line-height: 180%;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 1);
     font-weight: 300;
 }
 
@@ -330,9 +331,14 @@ section.footer h1 {
 
 .footerLinksDiv a {
     /* text-decoration: underline; */
-    color: #5b93e6;
+    color: rgba(255, 255, 255, 0.6);
     font-size: 1.5em;
+    transition: all 300ms ease;
 }
+.footerLinksDiv a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
 .footer-bottom-main {
     display: flex;
     align-items: center;
@@ -366,4 +372,21 @@ section.footer h1 {
 
 .footerSocials a img:hover {
     opacity: 1;
+}
+
+.side-fixed-btn {
+    background-color: rgb(248, 248, 248);
+    border-radius: 50%;
+    box-shadow: 0px 4px rgba(64, 106, 255, 1);
+    width: fit-content;
+    padding: 8px 10px;
+    position: fixed;
+    bottom: 32px;
+    right: 16px;
+    transition: all 300ms ease;
+    z-index: 100;
+}
+
+.side-fixed-btn:hover {
+    transform: translateY(-8px);
 }

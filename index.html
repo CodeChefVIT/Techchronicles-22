@@ -10,6 +10,10 @@
         <link rel="stylesheet" href="./FrontEnd/LandingPage/css/cursor.css" />
         <link rel="stylesheet" href="./FrontEnd/LandingPage/css/menu.css" />
         <link rel="stylesheet" href="./FrontEnd/LandingPage/css/layout.css" />
+        <link
+            rel="stylesheet"
+            href="./FrontEnd/LandingPage/css/submission.css"
+        />
 
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
@@ -21,14 +25,16 @@
             <div class="cursor"></div>
             <div class="inner-circle"></div>
         </div>
-
+        <div class="side-fixed-btn hover-change">
+            <img src="./FrontEnd/Images/discord.png" alt="" />
+        </div>
         <div class="main">
             <section id="Hero" class="section">
                 <nav>
                     <div class="nav-div">
                         <img
                             class="sidebarImg"
-                            src="./FrontEnd/Images/logo.png"
+                            src="./FrontEnd/Images/devsoclogo.png"
                             alt="Logo-TechChronicles"
                         />
                         <ul class="nav-div-ul">
@@ -50,7 +56,7 @@
                                 <a href="#Prizes">Prizes</a>
                             </li>
                             <li class="hover-change">
-                                <a href="/">Submit</a>
+                                <a href="#Submit">Submit</a>
                             </li>
                         </ul>
                         <div class="vertical-menu-icon-container hover-change">
@@ -105,7 +111,7 @@
                                     >
                                         <a
                                             class="sidebar-sections-span"
-                                            href="/"
+                                            href="#Submit"
                                             >Submit</a
                                         >
                                     </li>
@@ -153,10 +159,7 @@
 
                     <div class="hero-div-span-btn">
                         <span>Submissions are open!</span>
-                        <a
-                            href="./FrontEnd/SubmissionPage/index.html"
-                            target="_blank"
-                        >
+                        <a href="#Submit">
                             <button class="hover-change medium-btn"></button>
                         </a>
                     </div>
@@ -301,15 +304,39 @@
             </section>
 
             <section id="Submit">
-                <div class="submit-div-main">
-                    <div class="submit-div-main-content">
-                        <h1>Do not forget to submit your drafts ;)</h1>
-                        <a
-                            href="./FrontEnd/SubmissionPage/index.html"
-                            target="_blank"
-                        >
-                            <button class="hover-change medium-btn"></button
-                        ></a>
+                <div class="submission-main-container">
+                    <div class="submission-main-container-title">
+                        <span>Submit your draft</span>
+                    </div>
+
+                    <div class="submission-form-main-container">
+                        <form method="post" action="">
+                            <div class="submission-form">
+                                <div class="submission-form-field">
+                                    <label for="">Name</label>
+                                    <input class="hover-change" type="text" />
+                                </div>
+                                <div class="submission-form-field">
+                                    <label for="">Phone No.</label>
+                                    <input class="hover-change" type="tel" />
+                                </div>
+                                <div class="submission-form-field">
+                                    <label for="">College</label>
+                                    <input class="hover-change" type="text" />
+                                </div>
+                                <div class="submission-form-field">
+                                    <label for="">Email</label>
+                                    <input class="hover-change" type="email" />
+                                </div>
+                                <div class="submission-form-field">
+                                    <label for="">Submit Draft</label>
+                                    <input class="hover-change" type="text" />
+                                </div>
+                                <button class="submit-btn hover-change">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
