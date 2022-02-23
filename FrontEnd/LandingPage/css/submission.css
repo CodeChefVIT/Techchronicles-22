@@ -21,6 +21,7 @@
 .submission-main-container-title > span {
     font-size: 2em;
     font-weight: 600;
+    text-align: center;
 }
 .submission-form {
     display: flex;
