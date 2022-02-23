@@ -99,7 +99,10 @@ body {
 }
 
 .hero-div-span-btn span {
-    font-size: 3em;
+    font-size: 2em;
+    /* width: 80%; */
+    padding: 0 1rem;
+    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -254,10 +257,46 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 0 0 4rem;
+    gap: 13rem;
+    padding: 0 0 0 5rem;
 }
 .prizes-div-content-img p {
     font-size: 3em;
+}
+
+.prizes-main-container {
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+}
+
+.prizes-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 14rem;
+    height: 15rem;
+    border: 2px solid black;
+    border-radius: 16px;
+    /* gap: 1.5em; */
+    background-color: white;
+    box-shadow: 8px 8px #406aff;
+}
+
+.prizes-content span {
+    color: black;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: center;
+    /* padding: 0 1rem; */
+    padding: 1.5rem 1rem 0 1rem;
+}
+.prizes-content h1 {
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 /* Submit  */

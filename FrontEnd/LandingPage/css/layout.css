@@ -37,6 +37,11 @@
     .about-div-title-img-containers {
         gap: 6rem;
     }
+    .prizes-div-content-img {
+        padding: 0 0 0 0rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
 
 @media only screen and (max-width: 1030px) and (max-height: 610px) {
@@ -76,7 +81,7 @@
     }
 
     .hero-div-span-btn span {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .about-div-title-text {
         padding: 0 3rem;
@@ -167,7 +172,7 @@
     }
 
     .hero-div-span-btn span {
-        font-size: 1.5em;
+        font-size: 1em;
         text-align: center;
     }
 
@@ -209,6 +214,10 @@
     .about-tech-chronicles-content-container p,
     .rules-regulations-div-content-img p,
     .about-tech-chronicles-content-container-sub-text span {
+        font-size: 1em;
+    }
+
+    .prizes-content h1 {
         font-size: 1em;
     }
 
