@@ -256,9 +256,9 @@ body {
 .prizes-div-content-img {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 13rem;
-    padding: 0 0 0 5rem;
+    justify-content: space-between;
+    /* gap: 1rem; */
+    padding: 0 0 0 2rem;
 }
 .prizes-div-content-img p {
     font-size: 3em;
@@ -268,6 +268,7 @@ body {
     display: flex;
     gap: 4rem;
     flex-direction: column;
+    align-items: center;
 }
 
 .prizes-content {
@@ -283,6 +284,11 @@ body {
     /* gap: 1.5em; */
     background-color: white;
     box-shadow: 8px 8px #406aff;
+}
+
+.prizes-top-container {
+    display: flex;
+    gap: 2rem;
 }
 
 .prizes-content span {
