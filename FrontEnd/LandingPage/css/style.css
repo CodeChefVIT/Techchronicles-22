@@ -16,6 +16,7 @@ body {
     background: url("/FrontEnd/Images/body-image.png") no-repeat;
     background-position: top center;
     background-attachment: scroll;
+    /* background-size: cover; */
     height: 100%;
     min-width: 100%;
     overflow-x: hidden;
@@ -330,7 +331,6 @@ section.footer {
     background: rgba(0, 2, 55, 0.65);
     box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(15px);
-    margin-top: 16rem;
 }
 section.footer h1 {
     font-size: 2.5em;
