@@ -110,14 +110,22 @@ function formValidation() {
     // validation &= checkForm();
     validation &= ValidateEmail();
     validation &= ValidatePhoneNo();
-    validation &= formSuccess();
+    validation &= Draft();
+
+    // validation &= formSuccess();
     window.location.replace("#Submit");
+
+    if (validation) {
+    }
 }
 
 function formSuccess() {
-    if (ValidateEmail() && ValidatePhoneNo()) {
-        alert("Form submitted succesfully");
+    if (ValidateEmail() && ValidatePhoneNo() && Draft()) {
+        // alert("Form submitted succesfully");
         return true;
+    } else {
+        // alert("Check details!!");
+        return false;
     }
 }
 
@@ -141,7 +149,8 @@ function checkForm() {
 }
 
 function ValidateEmail() {
-    let Regex = /^([a-zA-Z0–9_\-\.]+)@([a-zA-Z0–9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+    let Regex =
+        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     let EmailVal = document.forms["contactForm"]["email"].value;
     if (EmailVal.match(Regex)) {
@@ -153,7 +162,7 @@ function ValidateEmail() {
 }
 
 function ValidatePhoneNo() {
-    let PhoneRegex = /^\+[1-9]{1}[0-9]{3,14}$/;
+    let PhoneRegex = /^[0-9]{10,}$/;
 
     let PhoneVal = document.forms["contactForm"]["phone_number"].value;
     if (PhoneVal.match(PhoneRegex)) {
@@ -164,18 +173,31 @@ function ValidatePhoneNo() {
     }
 }
 
-if (formSuccess) {
-    function handleSubmit(event) {
-        event.preventDefault();
+function Draft() {
+    let submitRegex =
+        /^((?!-))(xn--)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,1}\.(xn--)?([a-z0-9\-]{1,61}|[a-z0-9-]{1,30}\.[a-z]{2,})$/;
 
-        const data = new FormData(event.target);
+    let draft = document.forms["contactForm"]["draft"].value;
+    if (draft.match(submitRegex)) {
+        return true;
+    } else {
+        alert("Enter a valid url!");
+        return false;
+    }
+}
 
-        const value = Object.fromEntries(data.entries());
-        console.log(value);
+function handleSubmit(event) {
+    event.preventDefault();
 
-        var http = new XMLHttpRequest();
-        var url = "https://techchronicles2.herokuapp.com/";
+    const data = new FormData(event.target);
 
+    const value = Object.fromEntries(data.entries());
+    // console.log(value);
+
+    var http = new XMLHttpRequest();
+    var url = "https://techchronicles2.herokuapp.com/";
+
+    if (formSuccess()) {
         http.open("POST", url, true);
 
         http.setRequestHeader("Content-type", "application/json");
