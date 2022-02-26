@@ -107,15 +107,15 @@ myForm.addEventListener("submit", handleSubmit);
 
 function formValidation() {
     var validation = true;
-    validation &= formSuccess();
-    validation &= ValidateEmail();
-    validation &= ValidatePhoneNo();
-    validation &= Draft();
+    // validation &= formSuccess();
+    validation &= ValidateEmail;
+    validation &= ValidatePhoneNo;
+    validation &= Draft;
     window.location.replace("#Submit");
 }
 
 function formSuccess() {
-    if (ValidateEmail && ValidatePhoneNo && Draft) {
+    if (ValidateEmail() && ValidatePhoneNo() && Draft()) {
         // alert("Form submitted succesfully");
         return true;
     } else {
