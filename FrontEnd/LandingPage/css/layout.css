@@ -189,10 +189,21 @@
         text-align: center;
     }
 
-    .medium-btn {
-        padding: 1.5rem 4.5rem;
+    .medium-btn,
+    .title-submit-btn {
+        width: 130px;
+        height: 48px;
         box-shadow: 4px 4px rgba(64, 106, 255, 1);
     }
+    .title-submit-btn {
+        font-size: 1.25em;
+    }
+
+    .submit-btn {
+        width: 130px;
+        height: 48px;
+    }
+
     .moon-image {
         width: 60%;
     }
@@ -327,6 +338,15 @@
 }
 
 @media only screen and (max-width: 350px) {
+    .button-container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .title-submit-btn {
+        font-size: 1.25em;
+    }
+
     .submit-div-main-content {
         padding: 1.5rem 1rem 1.5rem 1rem;
     }

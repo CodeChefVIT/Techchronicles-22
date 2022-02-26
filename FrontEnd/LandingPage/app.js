@@ -3,6 +3,11 @@ const mouseCursorInnerCircle = document.querySelector(".inner-circle");
 const hoverChange = document.querySelectorAll(".hover-change");
 const RegBtn = document.querySelector(".Regbtn");
 const myForm = document.querySelector("#myForm");
+const modalText = document.querySelector(".modal_text");
+const modal = document.querySelector("#modal");
+const SubmitBtn = document.querySelector(".submit-btn");
+const ChangeBtn = document.querySelector(".modal__button");
+const darkBg = document.querySelector(".black-bg");
 
 document.addEventListener("mousemove", (e) => {
     mouseCursor.setAttribute(
@@ -103,6 +108,26 @@ hoverChange.forEach((item) => {
 
 myForm.addEventListener("submit", handleSubmit);
 
+SubmitBtn.addEventListener("click", () => {
+    let EmailVal = document.forms["contactForm"]["email"].value;
+    let PhoneVal = document.forms["contactForm"]["phone_number"].value;
+    let NameVal = document.forms["contactForm"]["name"].value;
+    let CollegeVal = document.forms["contactForm"]["college"].value;
+    if (
+        !(EmailVal == "") &&
+        !(PhoneVal == "") &&
+        !(NameVal == "") &&
+        !(CollegeVal == "")
+    ) {
+        modal.style.display = "flex";
+        darkBg.style.display = "block";
+    }
+});
+
+ChangeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    darkBg.style.display = "none";
+});
 // Validation
 
 function formValidation() {
@@ -111,8 +136,24 @@ function formValidation() {
     validation &= ValidateEmail;
     validation &= ValidatePhoneNo;
     validation &= Draft;
+    // validation &= checkForm;
     window.location.replace("#Submit");
 }
+
+// function EmptyValidation() {
+//     //   EmailVal = document.forms["contactForm"]["email"].value;
+//     //    PhoneVal = document.forms["contactForm"]["phone_number"].value;
+//     if (EmailVal == "") {
+//         modalText.innerText = "Fill all details!";
+//         return false;
+//     } else if (PhoneVal == "") {
+//         modalText.innerText = "Fill all details!";
+//         return false;
+//     } else if (NameVal == "") {
+//         modalText.innerText = "Fill all details!";
+//         return false;
+//     }
+// }
 
 function formSuccess() {
     if (ValidateEmail() && ValidatePhoneNo() && Draft()) {
@@ -129,14 +170,16 @@ function checkForm() {
     let CollegeVal = document.forms["contactForm"]["college"].value;
 
     if (NameVal == "") {
-        alert("Enter First Name");
+        // alert("Enter First Name");
+        modalText.innerText = "Enter First Name";
         return false;
     } else {
         return true;
     }
 
     if (CollegeVal == "") {
-        alert("Enter college name");
+        // alert("Enter college name");
+        modalText.innerText = "Enter college name";
         return false;
     } else {
         return true;
@@ -151,7 +194,8 @@ function ValidateEmail() {
     if (EmailVal.match(Regex)) {
         return true;
     } else {
-        alert("You have entered an invalid email address!");
+        modalText.innerText = "You have entered an invalid email address!";
+        // alert("You have entered an invalid email address!");
         return false;
     }
 }
@@ -162,20 +206,21 @@ function ValidatePhoneNo() {
     if (PhoneVal.match(PhoneRegex)) {
         return true;
     } else {
-        alert("Enter a Valid phone number");
+        // alert("Enter a Valid phone number");
+        modalText.innerText = "Enter a Valid phone number";
         return false;
     }
 }
 
 function Draft() {
     let submitRegex =
-        /^((?!-))(xn--)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,1}\.(xn--)?([a-z0-9\-]{1,61}|[a-z0-9-]{1,30}\.[a-z]{2,})$/;
-
+        /(([\w]+:)?\/\/)?(([\d\w]|%[a-fA-f\d]{2,2})+(:([\d\w]|%[a-fA-f\d]{2,2})+)?@)?([\d\w][-\d\w]{0,253}[\d\w]\.)+[\w]{2,63}(:[\d]+)?(\/([-+_~.\d\w]|%[a-fA-f\d]{2,2})*)*(\?(&?([-+_~.\d\w]|%[a-fA-f\d]{2,2})=?)*)?(#([-+_~.\d\w]|%[a-fA-f\d]{2,2})*)?/;
     let draft = document.forms["contactForm"]["draft"].value;
     if (draft.match(submitRegex)) {
         return true;
     } else {
-        alert("Enter a valid url!");
+        // alert("Enter a valid url!");
+        modalText.innerText = "Enter a valid url!";
         return false;
     }
 }
@@ -198,7 +243,8 @@ function handleSubmit(event) {
 
         http.onreadystatechange = function () {
             if (http.readyState == 4 && http.status == 200) {
-                alert(http.responseText);
+                modalText.innerText = http.responseText;
+                // alert(http.responseText);
             }
         };
         http.send(JSON.stringify(value));

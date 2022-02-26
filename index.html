@@ -60,6 +60,7 @@
         </a>
 
         <div class="main">
+            <div class="black-bg"></div>
             <section id="Hero" class="section">
                 <nav>
                     <div class="nav-div">
@@ -192,9 +193,21 @@
                         <span
                             >Submissions start from 28th Feb to 5th March!</span
                         >
-                        <a href="#Submit">
-                            <button class="hover-change medium-btn"></button>
-                        </a>
+                        <div class="button-container">
+                            <a
+                                href="https://medium.com/@codechefvit"
+                                target="_blank"
+                            >
+                                <button
+                                    class="hover-change medium-btn"
+                                ></button>
+                            </a>
+                            <a href="#Submit">
+                                <button class="hover-change title-submit-btn">
+                                    Submit
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -326,7 +339,7 @@
                     <div class="prizes-div-content-img">
                         <div class="prizes-main-container">
                             <div class="prizes-top-container">
-                                <div class="prizes-content">
+                                <div class="prizes-content hover-change">
                                     <h1>Rs. 2000</h1>
                                     <span>Cash prize</span>
                                     <img
@@ -335,7 +348,7 @@
                                         width="45%"
                                     />
                                 </div>
-                                <div class="prizes-content">
+                                <div class="prizes-content hover-change">
                                     <h1>Rs. 2000</h1>
                                     <span>Cash prize</span>
                                     <img
@@ -345,7 +358,7 @@
                                     />
                                 </div>
                             </div>
-                            <div class="prizes-content">
+                            <div class="prizes-content hover-change">
                                 <span>Postman Schwags</span>
                                 <img
                                     src="./FrontEnd/Images/postman-logo.png"
@@ -437,6 +450,10 @@
                                 </button>
                             </div>
                         </form>
+                    </div>
+                    <div id="modal">
+                        <p class="modal_text"></p>
+                        <button class="modal__button hover-change">Okay</button>
                     </div>
                 </div>
             </section>
