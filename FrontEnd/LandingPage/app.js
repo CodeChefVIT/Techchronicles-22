@@ -245,6 +245,8 @@ function handleSubmit(event) {
             if (http.readyState == 4 && http.status == 200) {
                 modalText.innerText = http.responseText;
                 // alert(http.responseText);
+            } else {
+                modalText.innerText = "Try Again later :(";
             }
         };
         http.send(JSON.stringify(value));
