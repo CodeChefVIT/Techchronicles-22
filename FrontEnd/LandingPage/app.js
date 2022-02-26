@@ -107,20 +107,15 @@ myForm.addEventListener("submit", handleSubmit);
 
 function formValidation() {
     var validation = true;
-    // validation &= checkForm();
+    validation &= formSuccess();
     validation &= ValidateEmail();
     validation &= ValidatePhoneNo();
     validation &= Draft();
-
-    // validation &= formSuccess();
     window.location.replace("#Submit");
-
-    if (validation) {
-    }
 }
 
 function formSuccess() {
-    if (ValidateEmail() && ValidatePhoneNo() && Draft()) {
+    if (ValidateEmail && ValidatePhoneNo && Draft) {
         // alert("Form submitted succesfully");
         return true;
     } else {
@@ -149,9 +144,9 @@ function checkForm() {
 }
 
 function ValidateEmail() {
-    let Regex =
-        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
+    // let Regex =
+    //     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    let Regex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
     let EmailVal = document.forms["contactForm"]["email"].value;
     if (EmailVal.match(Regex)) {
         return true;
@@ -160,7 +155,6 @@ function ValidateEmail() {
         return false;
     }
 }
-
 function ValidatePhoneNo() {
     let PhoneRegex = /^[0-9]{10,}$/;
 
