@@ -187,20 +187,17 @@ function checkForm() {
 }
 
 function ValidateEmail() {
-    // let Regex =
-    //     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     let Regex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
     let EmailVal = document.forms["contactForm"]["email"].value;
     if (EmailVal.match(Regex)) {
         return true;
     } else {
         modalText.innerText = "You have entered an invalid email address!";
-        // alert("You have entered an invalid email address!");
         return false;
     }
 }
 function ValidatePhoneNo() {
-    let PhoneRegex = /^[0-9]{10,}$/;
+    let PhoneRegex = /^(\+?\d{1,3}[- ]?)?\d{10}$/;
 
     let PhoneVal = document.forms["contactForm"]["phone_number"].value;
     if (PhoneVal.match(PhoneRegex)) {
@@ -243,8 +240,7 @@ function handleSubmit(event) {
 
         http.onreadystatechange = function () {
             if (http.readyState == 4 && http.status == 200) {
-                modalText.innerText = http.responseText;
-                // alert(http.responseText);
+                modalText.innerText = http.responseText.slice(1, -1);
             } else {
                 modalText.innerText = "Try Again later :(";
             }
