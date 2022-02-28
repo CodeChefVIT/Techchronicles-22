@@ -2,6 +2,7 @@
     body {
         background: url("/FrontEnd/Images/body-image\(desktop\).png") no-repeat;
         background-position: center top;
+        background-size: cover;
         height: 100%;
         /* overflow-x: hidden; */
     }
