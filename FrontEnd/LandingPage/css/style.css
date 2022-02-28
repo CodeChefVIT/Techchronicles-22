@@ -16,7 +16,7 @@ body {
     background: url("/FrontEnd/Images/body-image.png") no-repeat;
     background-position: top center;
     background-attachment: scroll;
-    /* background-size: cover; */
+    background-size: cover;
     height: 100%;
     min-width: 100%;
     overflow-x: hidden;
